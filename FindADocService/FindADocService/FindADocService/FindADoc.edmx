@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ThrCon8491123Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ThrCon8491123ModelStoreContainer">
+          <EntitySet Name="med_physdirectory_languages" EntityType="ThrCon8491123Model.Store.med_physdirectory_languages" store:Type="Tables" store:Schema="dbo" store:Name="med_physdirectory_languages">
+            <DefiningQuery>SELECT 
+      [med_physdirectory_languages].[ref] AS [ref], 
+      [med_physdirectory_languages].[keyvalue] AS [keyvalue]
+      FROM [dbo].[med_physdirectory_languages] AS [med_physdirectory_languages]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="med_physdirectory_Specialty" EntityType="ThrCon8491123Model.Store.med_physdirectory_Specialty" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GetInsuranceList_View" EntityType="ThrCon8491123Model.Store.GetInsuranceList_View" store:Type="Views" store:Schema="dbo" store:Name="GetInsuranceList_View">
+            <DefiningQuery>SELECT 
+      [GetInsuranceList_View].[id] AS [id], 
+      [GetInsuranceList_View].[description] AS [description]
+      FROM [dbo].[GetInsuranceList_View] AS [GetInsuranceList_View]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="GetPhysician_View" EntityType="ThrCon8491123Model.Store.GetPhysician_View" store:Type="Views" store:Schema="dbo" store:Name="GetPhysician_View">
+            <DefiningQuery>SELECT 
+      [GetPhysician_View].[id] AS [id], 
+      [GetPhysician_View].[poid] AS [poid], 
+      [GetPhysician_View].[FirstName] AS [FirstName], 
+      [GetPhysician_View].[middleinitial] AS [middleinitial], 
+      [GetPhysician_View].[LastName] AS [LastName], 
+      [GetPhysician_View].[Degree] AS [Degree], 
+      [GetPhysician_View].[gender] AS [gender], 
+      [GetPhysician_View].[age] AS [age], 
+      [GetPhysician_View].[Street] AS [Street], 
+      [GetPhysician_View].[street2] AS [street2], 
+      [GetPhysician_View].[City] AS [City], 
+      [GetPhysician_View].[State] AS [State], 
+      [GetPhysician_View].[Zip] AS [Zip], 
+      [GetPhysician_View].[Phone] AS [Phone], 
+      [GetPhysician_View].[fax] AS [fax], 
+      [GetPhysician_View].[facility] AS [facility], 
+      [GetPhysician_View].[Photo] AS [Photo], 
+      [GetPhysician_View].[specialty1] AS [specialty1], 
+      [GetPhysician_View].[specialty2] AS [specialty2], 
+      [GetPhysician_View].[specialty3] AS [specialty3], 
+      [GetPhysician_View].[specialty4] AS [specialty4], 
+      [GetPhysician_View].[certification] AS [certification], 
+      [GetPhysician_View].[medical_school] AS [medical_school], 
+      [GetPhysician_View].[internship] AS [internship], 
+      [GetPhysician_View].[residency] AS [residency], 
+      [GetPhysician_View].[fellowship] AS [fellowship], 
+      [GetPhysician_View].[hospitalaffiliation] AS [hospitalaffiliation], 
+      [GetPhysician_View].[primaryhospital] AS [primaryhospital], 
+      [GetPhysician_View].[secondaryhospital] AS [secondaryhospital], 
+      [GetPhysician_View].[languages] AS [languages], 
+      [GetPhysician_View].[practicingsince] AS [practicingsince], 
+      [GetPhysician_View].[practicetype] AS [practicetype], 
+      [GetPhysician_View].[acceptingnewpatients] AS [acceptingnewpatients], 
+      [GetPhysician_View].[samedayappt] AS [samedayappt], 
+      [GetPhysician_View].[apptavailability] AS [apptavailability], 
+      [GetPhysician_View].[acceptingonlineappts] AS [acceptingonlineappts], 
+      [GetPhysician_View].[websiteurl] AS [websiteurl], 
+      [GetPhysician_View].[patient_portal] AS [patient_portal], 
+      [GetPhysician_View].[physician_group] AS [physician_group], 
+      [GetPhysician_View].[m_date_create] AS [m_date_create], 
+      [GetPhysician_View].[m_date_mod] AS [m_date_mod], 
+      [GetPhysician_View].[zip_latitude] AS [zip_latitude], 
+      [GetPhysician_View].[zip_longitude] AS [zip_longitude], 
+      [GetPhysician_View].[addr_latitude] AS [addr_latitude], 
+      [GetPhysician_View].[addr_longitude] AS [addr_longitude], 
+      [GetPhysician_View].[miles_from_here] AS [miles_from_here], 
+      [GetPhysician_View].[RowNumber] AS [RowNumber]
+      FROM [dbo].[GetPhysician_View] AS [GetPhysician_View]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="HospitalAffiliationsList_View" EntityType="ThrCon8491123Model.Store.HospitalAffiliationsList_View" store:Type="Views" store:Schema="dbo" store:Name="HospitalAffiliationsList_View">
+            <DefiningQuery>SELECT 
+      [HospitalAffiliationsList_View].[description] AS [description]
+      FROM [dbo].[HospitalAffiliationsList_View] AS [HospitalAffiliationsList_View]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Med_Physdirectory_Offices_View" EntityType="ThrCon8491123Model.Store.Med_Physdirectory_Offices_View" store:Type="Views" store:Schema="dbo" store:Name="Med_Physdirectory_Offices_View">
+            <DefiningQuery>SELECT 
+      [Med_Physdirectory_Offices_View].[ref] AS [ref], 
+      [Med_Physdirectory_Offices_View].[userrecordref] AS [userrecordref], 
+      [Med_Physdirectory_Offices_View].[primaryoffice] AS [primaryoffice], 
+      [Med_Physdirectory_Offices_View].[locationname] AS [locationname], 
+      [Med_Physdirectory_Offices_View].[address1] AS [address1], 
+      [Med_Physdirectory_Offices_View].[address2] AS [address2], 
+      [Med_Physdirectory_Offices_View].[city] AS [city], 
+      [Med_Physdirectory_Offices_View].[state] AS [state], 
+      [Med_Physdirectory_Offices_View].[zip] AS [zip], 
+      [Med_Physdirectory_Offices_View].[phone] AS [phone], 
+      [Med_Physdirectory_Offices_View].[fax] AS [fax], 
+      [Med_Physdirectory_Offices_View].[hours] AS [hours]
+      FROM [dbo].[Med_Physdirectory_Offices_View] AS [Med_Physdirectory_Offices_View]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'ThrCon8491123.dbo.med_physdirectory_languages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="med_physdirectory_languages">
+          <Key>
+            <PropertyRef Name="ref" />
+          </Key>
+          <Property Name="ref" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="keyvalue" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="med_physdirectory_Specialty">
+          <Key>
+            <PropertyRef Name="ref" />
+          </Key>
+          <Property Name="ref" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="keyvalue" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'ThrCon8491123.dbo.GetInsuranceList_View' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="GetInsuranceList_View">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="description" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'ThrCon8491123.dbo.GetPhysician_View' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="GetPhysician_View">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="facility" />
+            <PropertyRef Name="medical_school" />
+            <PropertyRef Name="internship" />
+            <PropertyRef Name="residency" />
+            <PropertyRef Name="fellowship" />
+            <PropertyRef Name="primaryhospital" />
+            <PropertyRef Name="secondaryhospital" />
+            <PropertyRef Name="apptavailability" />
+            <PropertyRef Name="zip_latitude" />
+            <PropertyRef Name="zip_longitude" />
+            <PropertyRef Name="addr_latitude" />
+            <PropertyRef Name="addr_longitude" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="poid" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="255" />
+          <Property Name="middleinitial" Type="varchar" MaxLength="255" />
+          <Property Name="LastName" Type="varchar" MaxLength="255" />
+          <Property Name="Degree" Type="varchar" MaxLength="255" />
+          <Property Name="gender" Type="varchar" MaxLength="50" />
+          <Property Name="age" Type="int" />
+          <Property Name="Street" Type="varchar" MaxLength="255" />
+          <Property Name="street2" Type="varchar" MaxLength="255" />
+          <Property Name="City" Type="varchar" MaxLength="255" />
+          <Property Name="State" Type="varchar" MaxLength="50" />
+          <Property Name="Zip" Type="varchar" MaxLength="15" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="fax" Type="varchar" MaxLength="50" />
+          <Property Name="facility" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Photo" Type="varchar" MaxLength="255" />
+          <Property Name="specialty1" Type="varchar" MaxLength="50" />
+          <Property Name="specialty2" Type="varchar" MaxLength="50" />
+          <Property Name="specialty3" Type="varchar" MaxLength="50" />
+          <Property Name="specialty4" Type="varchar" MaxLength="50" />
+          <Property Name="certification" Type="text" />
+          <Property Name="medical_school" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="internship" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="residency" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="fellowship" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="hospitalaffiliation" Type="varchar" MaxLength="255" />
+          <Property Name="primaryhospital" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="secondaryhospital" Type="text" Nullable="false" />
+          <Property Name="languages" Type="varchar" MaxLength="255" />
+          <Property Name="practicingsince" Type="varchar" MaxLength="255" />
+          <Property Name="practicetype" Type="varchar" MaxLength="255" />
+          <Property Name="acceptingnewpatients" Type="varchar" MaxLength="1" />
+          <Property Name="samedayappt" Type="varchar" MaxLength="1" />
+          <Property Name="apptavailability" Type="int" Nullable="false" />
+          <Property Name="acceptingonlineappts" Type="varchar" MaxLength="1" />
+          <Property Name="websiteurl" Type="varchar" MaxLength="255" />
+          <Property Name="patient_portal" Type="varchar" MaxLength="20" />
+          <Property Name="physician_group" Type="bit" />
+          <Property Name="m_date_create" Type="datetime" />
+          <Property Name="m_date_mod" Type="datetime" />
+          <Property Name="zip_latitude" Type="real" Nullable="false" />
+          <Property Name="zip_longitude" Type="real" Nullable="false" />
+          <Property Name="addr_latitude" Type="real" Nullable="false" />
+          <Property Name="addr_longitude" Type="real" Nullable="false" />
+          <Property Name="miles_from_here" Type="numeric" Scale="8" />
+          <Property Name="RowNumber" Type="bigint" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'ThrCon8491123.dbo.HospitalAffiliationsList_View' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="HospitalAffiliationsList_View">
+          <Key>
+            <PropertyRef Name="description" />
+          </Key>
+          <Property Name="description" Type="varchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'ThrCon8491123.dbo.Med_Physdirectory_Offices_View' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Med_Physdirectory_Offices_View">
+          <Key>
+            <PropertyRef Name="ref" />
+            <PropertyRef Name="zip" />
+          </Key>
+          <Property Name="ref" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="userrecordref" Type="int" />
+          <Property Name="primaryoffice" Type="varchar" MaxLength="1" />
+          <Property Name="locationname" Type="varchar" MaxLength="255" />
+          <Property Name="address1" Type="varchar" MaxLength="100" />
+          <Property Name="address2" Type="varchar" MaxLength="100" />
+          <Property Name="city" Type="varchar" MaxLength="100" />
+          <Property Name="state" Type="varchar" MaxLength="75" />
+          <Property Name="zip" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="phone" Type="varchar" MaxLength="50" />
+          <Property Name="fax" Type="varchar" MaxLength="50" />
+          <Property Name="hours" Type="text" />
+        </EntityType>
+        <Function Name="getPhysicianList_Mobile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="lname" Type="varchar" Mode="In" />
+          <Parameter Name="fname" Type="varchar" Mode="In" />
+          <Parameter Name="degree" Type="varchar" Mode="In" />
+          <Parameter Name="gender" Type="varchar" Mode="In" />
+          <Parameter Name="agemin" Type="int" Mode="In" />
+          <Parameter Name="agemax" Type="int" Mode="In" />
+          <Parameter Name="lang" Type="varchar" Mode="In" />
+          <Parameter Name="spec" Type="varchar" Mode="In" />
+          <Parameter Name="sameday" Type="char" Mode="In" />
+          <Parameter Name="apptavail" Type="int" Mode="In" />
+          <Parameter Name="hospaffil" Type="varchar" Mode="In" />
+          <Parameter Name="insur" Type="int" Mode="In" />
+          <Parameter Name="zip" Type="varchar" Mode="In" />
+          <Parameter Name="latitude" Type="real" Mode="In" />
+          <Parameter Name="longitude" Type="real" Mode="In" />
+          <Parameter Name="distance" Type="int" Mode="In" />
+          <Parameter Name="StartFrom" Type="int" Mode="In" />
+          <Parameter Name="NumberOfRecords" Type="int" Mode="In" />
+        </Function>
+        <Function Name="getPhysicianOffices_Mobile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ids" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="getSearchListHospitalAffiliations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getSearchListInsurances" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getSearchListLanguages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="getSearchListSpecialties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ThrCon8491123Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ThrCon8491123Entities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="GetPhysician_View" EntityType="ThrCon8491123Model.GetPhysician_View" />
+          <EntitySet Name="GetInsuranceList_View" EntityType="ThrCon8491123Model.GetInsuranceList_View" />
+          <FunctionImport Name="getinsuranceList" EntitySet="GetInsuranceList_View" ReturnType="Collection(ThrCon8491123Model.GetInsuranceList_View)" />
+          <EntitySet Name="med_physdirectory_languages" EntityType="ThrCon8491123Model.med_physdirectory_languages" />
+          <FunctionImport Name="getSearchListLanguages" EntitySet="med_physdirectory_languages" ReturnType="Collection(ThrCon8491123Model.med_physdirectory_languages)" />
+          <EntitySet Name="med_physdirectory_Specialty" EntityType="ThrCon8491123Model.med_physdirectory_Specialty" />
+          <FunctionImport Name="getSearchListSpecialties" EntitySet="med_physdirectory_Specialty" ReturnType="Collection(ThrCon8491123Model.med_physdirectory_Specialty)" />
+          <EntitySet Name="HospitalAffiliationsList_View" EntityType="ThrCon8491123Model.HospitalAffiliationsList_View" />
+          <FunctionImport Name="getSearchListHospitalAffiliations" EntitySet="HospitalAffiliationsList_View" ReturnType="Collection(ThrCon8491123Model.HospitalAffiliationsList_View)" />
+          <FunctionImport Name="getPhysicianListwithPaging" EntitySet="GetPhysician_View" ReturnType="Collection(ThrCon8491123Model.GetPhysician_View)">
+            <Parameter Name="lname" Mode="In" Type="String" />
+            <Parameter Name="fname" Mode="In" Type="String" />
+            <Parameter Name="degree" Mode="In" Type="String" />
+            <Parameter Name="gender" Mode="In" Type="String" />
+            <Parameter Name="agemin" Mode="In" Type="Int32" />
+            <Parameter Name="agemax" Mode="In" Type="Int32" />
+            <Parameter Name="lang" Mode="In" Type="String" />
+            <Parameter Name="spec" Mode="In" Type="String" />
+            <Parameter Name="sameday" Mode="In" Type="String" />
+            <Parameter Name="apptavail" Mode="In" Type="Int32" />
+            <Parameter Name="hospaffil" Mode="In" Type="String" />
+            <Parameter Name="insur" Mode="In" Type="Int32" />
+            <Parameter Name="zip" Mode="In" Type="String" />
+            <Parameter Name="latitude" Mode="In" Type="Single" />
+            <Parameter Name="longitude" Mode="In" Type="Single" />
+            <Parameter Name="distance" Mode="In" Type="Int32" />
+            <Parameter Name="StartFrom" Mode="In" Type="Int32" />
+            <Parameter Name="NumberOfRecords" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="Med_Physdirectory_Offices_View" EntityType="ThrCon8491123Model.Med_Physdirectory_Offices_View" />
+          <FunctionImport Name="getPhysicianOffices" EntitySet="Med_Physdirectory_Offices_View" ReturnType="Collection(ThrCon8491123Model.Med_Physdirectory_Offices_View)">
+            <Parameter Name="ids" Mode="In" Type="String" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="GetPhysician_View">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="facility" />
+            <PropertyRef Name="medical_school" />
+            <PropertyRef Name="internship" />
+            <PropertyRef Name="residency" />
+            <PropertyRef Name="fellowship" />
+            <PropertyRef Name="primaryhospital" />
+            <PropertyRef Name="secondaryhospital" />
+            <PropertyRef Name="apptavailability" />
+            <PropertyRef Name="zip_latitude" />
+            <PropertyRef Name="zip_longitude" />
+            <PropertyRef Name="addr_latitude" />
+            <PropertyRef Name="addr_longitude" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="poid" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FirstName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="middleinitial" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="LastName" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Degree" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="gender" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="age" />
+          <Property Type="String" Name="Street" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="street2" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="City" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="State" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Zip" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="fax" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="facility" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Photo" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="specialty1" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="specialty2" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="specialty3" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="specialty4" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="certification" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="medical_school" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="internship" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="residency" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="fellowship" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="hospitalaffiliation" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="primaryhospital" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="secondaryhospital" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="languages" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="practicingsince" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="practicetype" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="acceptingnewpatients" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="samedayappt" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="apptavailability" Nullable="false" />
+          <Property Type="String" Name="acceptingonlineappts" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="websiteurl" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="patient_portal" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="physician_group" />
+          <Property Type="DateTime" Name="m_date_create" />
+          <Property Type="DateTime" Name="m_date_mod" />
+          <Property Type="Single" Name="zip_latitude" Nullable="false" />
+          <Property Type="Single" Name="zip_longitude" Nullable="false" />
+          <Property Type="Single" Name="addr_latitude" Nullable="false" />
+          <Property Type="Single" Name="addr_longitude" Nullable="false" />
+          <Property Type="Decimal" Name="miles_from_here" Precision="18" Scale="8" />
+          <Property Type="Int64" Name="RowNumber" />
+        </EntityType>
+        <EntityType Name="GetInsuranceList_View">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="description" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="med_physdirectory_languages">
+          <Key>
+            <PropertyRef Name="ref" />
+          </Key>
+          <Property Type="Int32" Name="ref" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="keyvalue" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="med_physdirectory_Specialty">
+          <Key>
+            <PropertyRef Name="ref" />
+          </Key>
+          <Property Type="Int32" Name="ref" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="keyvalue" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HospitalAffiliationsList_View">
+          <Key>
+            <PropertyRef Name="description" />
+          </Key>
+          <Property Type="String" Name="description" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Med_Physdirectory_Offices_View">
+          <Key>
+            <PropertyRef Name="ref" />
+            <PropertyRef Name="zip" />
+          </Key>
+          <Property Type="Int32" Name="ref" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="userrecordref" />
+          <Property Type="String" Name="primaryoffice" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="locationname" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="address1" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="address2" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="city" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="state" MaxLength="75" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="zip" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="phone" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="fax" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="hours" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ThrCon8491123ModelStoreContainer" CdmEntityContainer="ThrCon8491123Entities" >
+          <EntitySetMapping Name="GetPhysician_View">
+            <EntityTypeMapping TypeName="ThrCon8491123Model.GetPhysician_View">
+              <MappingFragment StoreEntitySet="GetPhysician_View">
+                <ScalarProperty Name="RowNumber" ColumnName="RowNumber" />
+                <ScalarProperty Name="miles_from_here" ColumnName="miles_from_here" />
+                <ScalarProperty Name="addr_longitude" ColumnName="addr_longitude" />
+                <ScalarProperty Name="addr_latitude" ColumnName="addr_latitude" />
+                <ScalarProperty Name="zip_longitude" ColumnName="zip_longitude" />
+                <ScalarProperty Name="zip_latitude" ColumnName="zip_latitude" />
+                <ScalarProperty Name="m_date_mod" ColumnName="m_date_mod" />
+                <ScalarProperty Name="m_date_create" ColumnName="m_date_create" />
+                <ScalarProperty Name="physician_group" ColumnName="physician_group" />
+                <ScalarProperty Name="patient_portal" ColumnName="patient_portal" />
+                <ScalarProperty Name="websiteurl" ColumnName="websiteurl" />
+                <ScalarProperty Name="acceptingonlineappts" ColumnName="acceptingonlineappts" />
+                <ScalarProperty Name="apptavailability" ColumnName="apptavailability" />
+                <ScalarProperty Name="samedayappt" ColumnName="samedayappt" />
+                <ScalarProperty Name="acceptingnewpatients" ColumnName="acceptingnewpatients" />
+                <ScalarProperty Name="practicetype" ColumnName="practicetype" />
+                <ScalarProperty Name="practicingsince" ColumnName="practicingsince" />
+                <ScalarProperty Name="languages" ColumnName="languages" />
+                <ScalarProperty Name="secondaryhospital" ColumnName="secondaryhospital" />
+                <ScalarProperty Name="primaryhospital" ColumnName="primaryhospital" />
+                <ScalarProperty Name="hospitalaffiliation" ColumnName="hospitalaffiliation" />
+                <ScalarProperty Name="fellowship" ColumnName="fellowship" />
+                <ScalarProperty Name="residency" ColumnName="residency" />
+                <ScalarProperty Name="internship" ColumnName="internship" />
+                <ScalarProperty Name="medical_school" ColumnName="medical_school" />
+                <ScalarProperty Name="certification" ColumnName="certification" />
+                <ScalarProperty Name="specialty4" ColumnName="specialty4" />
+                <ScalarProperty Name="specialty3" ColumnName="specialty3" />
+                <ScalarProperty Name="specialty2" ColumnName="specialty2" />
+                <ScalarProperty Name="specialty1" ColumnName="specialty1" />
+                <ScalarProperty Name="Photo" ColumnName="Photo" />
+                <ScalarProperty Name="facility" ColumnName="facility" />
+                <ScalarProperty Name="fax" ColumnName="fax" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Zip" ColumnName="Zip" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="street2" ColumnName="street2" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="Degree" ColumnName="Degree" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="middleinitial" ColumnName="middleinitial" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="poid" ColumnName="poid" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GetInsuranceList_View">
+            <EntityTypeMapping TypeName="ThrCon8491123Model.GetInsuranceList_View">
+              <MappingFragment StoreEntitySet="GetInsuranceList_View">
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="getinsuranceList" FunctionName="ThrCon8491123Model.Store.getSearchListInsurances" />
+          <EntitySetMapping Name="med_physdirectory_languages">
+            <EntityTypeMapping TypeName="ThrCon8491123Model.med_physdirectory_languages">
+              <MappingFragment StoreEntitySet="med_physdirectory_languages">
+                <ScalarProperty Name="keyvalue" ColumnName="keyvalue" />
+                <ScalarProperty Name="ref" ColumnName="ref" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="getSearchListLanguages" FunctionName="ThrCon8491123Model.Store.getSearchListLanguages" />
+          <EntitySetMapping Name="med_physdirectory_Specialty">
+            <EntityTypeMapping TypeName="ThrCon8491123Model.med_physdirectory_Specialty">
+              <MappingFragment StoreEntitySet="med_physdirectory_Specialty">
+                <ScalarProperty Name="keyvalue" ColumnName="keyvalue" />
+                <ScalarProperty Name="ref" ColumnName="ref" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="getSearchListSpecialties" FunctionName="ThrCon8491123Model.Store.getSearchListSpecialties" />
+          <EntitySetMapping Name="HospitalAffiliationsList_View">
+            <EntityTypeMapping TypeName="ThrCon8491123Model.HospitalAffiliationsList_View">
+              <MappingFragment StoreEntitySet="HospitalAffiliationsList_View">
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="getSearchListHospitalAffiliations" FunctionName="ThrCon8491123Model.Store.getSearchListHospitalAffiliations" />
+          <FunctionImportMapping FunctionImportName="getPhysicianListwithPaging" FunctionName="ThrCon8491123Model.Store.getPhysicianList_Mobile" />
+          <EntitySetMapping Name="Med_Physdirectory_Offices_View">
+            <EntityTypeMapping TypeName="ThrCon8491123Model.Med_Physdirectory_Offices_View">
+              <MappingFragment StoreEntitySet="Med_Physdirectory_Offices_View">
+                <ScalarProperty Name="hours" ColumnName="hours" />
+                <ScalarProperty Name="fax" ColumnName="fax" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="zip" ColumnName="zip" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="address2" ColumnName="address2" />
+                <ScalarProperty Name="address1" ColumnName="address1" />
+                <ScalarProperty Name="locationname" ColumnName="locationname" />
+                <ScalarProperty Name="primaryoffice" ColumnName="primaryoffice" />
+                <ScalarProperty Name="userrecordref" ColumnName="userrecordref" />
+                <ScalarProperty Name="ref" ColumnName="ref" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="getPhysicianOffices" FunctionName="ThrCon8491123Model.Store.getPhysicianOffices_Mobile" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="FindADoc" ZoomLevel="80" >
+        <EntityTypeShape EntityType="ThrCon8491123Model.GetPhysician_View" Width="1.875" PointX="0.75" PointY="0.75" Height="8.6592415364583317" />
+        <EntityTypeShape EntityType="ThrCon8491123Model.GetInsuranceList_View" Width="1.5" PointX="3.375" PointY="0.75" Height="1.2636116536458335" />
+        <EntityTypeShape EntityType="ThrCon8491123Model.med_physdirectory_languages" Width="3.375" PointX="5.375" PointY="0.75" Height="1.2636116536458317" />
+        <EntityTypeShape EntityType="ThrCon8491123Model.med_physdirectory_Specialty" Width="4.125" PointX="5.375" PointY="3.75" Height="1.2636116536458317" />
+        <EntityTypeShape EntityType="ThrCon8491123Model.HospitalAffiliationsList_View" Width="1.5" PointX="5.375" PointY="6.75" Height="1.0992643229166674" />
+        <EntityTypeShape EntityType="ThrCon8491123Model.Med_Physdirectory_Offices_View" Width="1.5" PointX="7.375" PointY="6.75" Height="2.9070849609374996" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
