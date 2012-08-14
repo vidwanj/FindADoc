@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <title></title>
+    <title> </title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
     <link rel="stylesheet" type="text/css" href="includes/stylesheet.css" />
     <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
